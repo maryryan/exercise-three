@@ -32,11 +32,12 @@ function loopThroughData(s) {
         //     console.log(year, schoolName, gradPct);
         // }
 
-        var barWidth = gradPct * 5;
+        var barWidth = gradPct * 10;
 
         if (schoolName === "FREDERICK DOUGLASS HIGH") {
             //same in value and type
             $(".chart").append(
+                "<p>"+year+": "+gradPct+"%</p>"+
                 "<div class='bar' style='width: "+barWidth+"px'></div>"
             ); //adding the bar shit to anywhere that has a chart class
 
